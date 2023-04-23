@@ -9,9 +9,16 @@ pipeline {
 
     stage('echo') {
       steps {
-        echo 'holaaaaaa'
+        echo 'echo holaaaaaa'
         sh 'ls'
-        sh 'echo "helloooo"'
+        sh 'sh "helloooo"'
+      }
+    }
+
+    stage('build fly') {
+      steps {
+        sh 'sleep 5'
+        sh 'echo Success!'
       }
     }
 
