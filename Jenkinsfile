@@ -18,14 +18,14 @@ pipeline {
     stage('Fluffy Deploy') {
       steps {
         echo 'hello'
-        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
+        sh 'echo $NAME'
       }
     }
 
   }
   environment {
-    name = 'jorge ramiro alrcon vargas'
+    NAME = 'jorge ramiro alrcon vargas'
     db = 'linode-sss-xxx-llll'
-    new_branch = 'new_branch remake'
+    new_branch = 'xxx'
   }
 }
