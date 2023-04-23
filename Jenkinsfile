@@ -7,6 +7,14 @@ pipeline {
       }
     }
 
+    stage('echo') {
+      steps {
+        echo 'holaaaaaa'
+        sh 'ls'
+        sh 'echo "helloooo"'
+      }
+    }
+
   }
   environment {
     name = 'jorge ramiro alrcon vargas'
