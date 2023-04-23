@@ -10,7 +10,7 @@ pipeline {
 
     stage('Fluffy Test') {
       steps {
-        sh 'sleep 10'
+        sh 'sleep 20'
         sh 'echo Success!'
       }
     }
@@ -25,6 +25,6 @@ pipeline {
   environment {
     name = 'jorge ramiro alrcon vargas'
     db = 'linode-sss-xxx-llll'
-    new_branch = 'new_branch'
+    new_branch = 'new_branch remake'
   }
 }
