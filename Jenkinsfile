@@ -18,6 +18,7 @@ pipeline {
     stage('Fluffy Deploy') {
       steps {
         echo 'hello'
+        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
       }
     }
 
